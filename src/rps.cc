@@ -1,4 +1,3 @@
-#include "tools\mysleep.h"
 #include <iostream>
 #include <string>
 #include <cstdlib>
@@ -64,15 +63,19 @@ int main() {
 		cout << "\n\n";
 		string playerMove = translateChoice(choice);
 		string computerMove = getMove();
-		mysleep(1);
+
+		// TODO: sleep for 1 second
+
 		for (size_t i = 3; i > 0; i--) {
 			cout << i << "!\n";
-			mysleep(.5);
+			// TODO: sleep for half a second
 		}
 		cout << "\nShoot!\n\n";
 		cout << "Player Move: " << playerMove << "\n";
 		cout << "Computer Move: " << computerMove << "\n";
-		mysleep(2);
+		
+		// TODO: sleep for 2 seconds
+
 		string result = decideWinner(playerMove, computerMove);
 		if (result == "player") {
 			cout << "You win!\n";
@@ -86,6 +89,6 @@ int main() {
 			cout << "It was a tie!\n";
 			ties++;
 		}
-		mysleep(4);
+		// TODO: sleep for 4 seconds
 	}
 }
