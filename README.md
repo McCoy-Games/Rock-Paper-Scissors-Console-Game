@@ -1,2 +1,2 @@
 # Rock Paper Scissors Console Game
-Allows you to play Rock Paper Scissors against a random AI in the console. 
+This applications allows the user to play Rock Paper Scissors against the computer. 
